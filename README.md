@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🌐 Website Reviewer
+Check how well any website performs with this sleek Next.js app! 🚀 It uses Google PageSpeed Insights API to give you quick, clear feedback on a website’s:
 
-## Getting Started
+⚡ Performance
 
-First, run the development server:
+♿ Accessibility
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🔍 SEO
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔒 HTTPS usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🎥 Watch the demo video here:
+👉 Demo Video
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+How it works 🛠️
+🔗 Enter any website URL starting with http:// or https://.
 
-## Learn More
+🚦 The app validates the URL on the client side.
 
-To learn more about Next.js, take a look at the following resources:
+📡 Sends the URL to a Next.js API route which fetches PageSpeed Insights data from Google’s API.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📊 Extracts key metrics (Performance, Accessibility, SEO) and shows them with colorful circular progress bars.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🔐 Displays whether the website uses HTTPS.
 
-## Deploy on Vercel
+🌙 Switch between light and dark modes for comfy viewing anytime!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Tech highlights ⚙️
+Built with Next.js API routes and React hooks
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Uses react-circular-progressbar for smooth, animated score displays
+
+Integrates Google PageSpeed Insights API for real data
+
+Light/dark theme toggle with lucide-react icons
+
+Robust error handling and user-friendly UI feedback
+
+Try it out and get instant insights on any website’s quality — perfect for developers, SEO pros, and curious web explorers! 🌟
+
