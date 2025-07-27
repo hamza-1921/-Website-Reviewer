@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+:root {
+  --bg-page: #f4f4f4;
+  --bg-card: #fff;
+  --text: #1e1e1e;
+  --btn-bg: #0070f3;
+  --btn-hover: #005bb5;
+}
+
+.dark {
+  --bg-page: #1e1e1e;
+  --bg-card: #2a2a2a;
+  --text: #eaeaea;
+  --btn-bg: #4a90e2;
+  --btn-hover: #387ed5;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+html {
+  background: var(--bg-page);
+  color: var(--text);
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.page {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background: var(--bg-card);
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: background 0.3s ease-in-out;
+}
+/* Theme toggle button */
+.theme-toggle {
+  margin-bottom: 20px;
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 12px;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+.theme-toggle:hover {
+  transform: scale(1.05);
+  color: var(--btn-bg);
+}
+
+/* Input & button styling */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+.input-field:focus {
+  border-color: var(--btn-bg);
+  outline: none;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background: var(--btn-bg);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.submit-button:hover:not(:disabled) {
+  background: var(--btn-hover);
+  transform: scale(1.02);
+}
+.submit-button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.report-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 6px;
+  background: var(--bg-card);
+  white-space: pre-wrap;
+  font-size: 14px;
+  color: var(--text);
+  transition: background 0.3s;
+}
+.error {
+  color: crimson;
+}
+.headline {
+  text-align: center;
+  margin-bottom: 20px;
+}
